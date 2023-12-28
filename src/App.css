@@ -12,7 +12,6 @@ body {
 
 /* Write CSS code here */
 .bg-container {
-  height: 100vh;
   background-color: #f4faff;
   display: flex;
   flex-direction: column;
@@ -21,21 +20,52 @@ body {
 }
 .content-container {
   text-align: center;
+  padding: 13px;
 }
 .card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+  padding: 0px;
 }
 .heading {
   font-family: 'Roboto';
   color: #171f46;
-  font-size: 36px;
 }
 .description {
   font-family: 'Roboto';
   color: #64748b;
-  font-size: 15px;
   max-width: 550px;
+}
+@media (max-width: 576px), (min-width: 576px), (min-width: 768px) {
+  .bg-container {
+    height: 150vh;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+@media (min-width: 992px), (min-width: 1200px) {
+  .bg-container {
+    height: 100vh;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .heading {
+    font-size: 36px;
+  }
+  .description {
+    font-size: 13px;
+  }
 }
