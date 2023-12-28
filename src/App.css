@@ -35,9 +35,6 @@ body {
   max-width: 550px;
 }
 @media (max-width: 576px), (min-width: 576px), (min-width: 768px) {
-  .bg-container {
-    height: 100dvh;
-  }
   .card-container {
     display: flex;
     flex-direction: column;
@@ -52,9 +49,6 @@ body {
   }
 }
 @media (min-width: 992px), (min-width: 1200px) {
-  .bg-container {
-    height: 100vh;
-  }
   .card-container {
     display: flex;
     flex-direction: row;
