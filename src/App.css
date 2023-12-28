@@ -36,7 +36,7 @@ body {
 }
 @media (max-width: 576px), (min-width: 576px), (min-width: 768px) {
   .bg-container {
-    height: 150vh;
+    height: 100dvh;
   }
   .card-container {
     display: flex;
